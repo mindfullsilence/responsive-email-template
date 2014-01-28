@@ -1,0 +1,348 @@
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport"
+          content="initial-scale=1.0" />
+    <meta name="format-detection" content="telephone=no" />
+
+    <!-- EDIT THE TITLE TAG -->
+    <title>
+        Responsive Email Modules
+    </title>
+
+    <style type="text/css">
+            /*************************************
+                    DO NOT TOUCH THESE
+            *************************************/
+            /* Resets: see reset.css for details */
+        .ReadMsgBody {
+            width: 100%;
+            background-color: #ebebeb;
+        }
+
+        .ExternalClass {
+            width: 100%;
+            background-color: #ebebeb;
+        }
+
+        .ExternalClass, .ExternalClass p, .ExternalClass span, .ExternalClass font, .ExternalClass td,
+        .ExternalClass div {
+            line-height: 100%;
+        }
+
+        body {
+            -webkit-text-size-adjust: none;
+            -ms-text-size-adjust: none;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        table {
+            border-spacing: 0;
+        }
+
+        table td {
+            border-collapse: collapse;
+        }
+
+        .yshortcuts a {
+            border-bottom: none !important;
+        }
+
+        img {
+            width: 100%;
+            max-width: 600px;
+        }
+
+            /* Constrain email width for small screens */
+        @media screen and (max-width: 600px) {
+            table[class="container"] {
+                width: 95% !important;
+            }
+        }
+
+            /* Give content more room on mobile */
+        @media screen and (max-width: 480px) {
+            td[class="container-padding"] {
+                padding-left: 12px !important;
+                padding-right: 12px !important;
+            }
+        }
+
+            /* Styles for forcing columns to rows */
+        @media only screen and (max-width : 600px) {
+            table[class="columns-container"] {
+                width: 100% !important;
+            }
+
+            /* force container columns to (horizontal) blocks */
+            td[id="force-col"] {
+                display: block !important;
+                width: 100% !important;
+            }
+
+            table[class="col-4"], table[class="col-3"], table[class="col-2"] {
+                /* unset table align="left/right" */
+                float: none !important;
+                width: 100% !important;
+
+                /* change left/right padding and margins to top/bottom ones */
+                margin-bottom: 12px;
+                padding-bottom: 12px;
+                border-bottom: 1px solid #eee;
+            }
+
+            table[class="col-4"], table[class="col-3"] {
+                margin-left: 0 !important;
+                margin-right: 0 !important;
+                padding-left: 0 !important;
+                padding-right: 0 !important;
+            }
+
+            table[class="col-2"] {
+                margin-left: 0 !important;
+                padding-left: 0 !important;
+                padding-right: 0 !important;
+            }
+
+            /* remove bottom border for last column/row */
+            table[id="last-col-3"], table[id="last-col-full-3"] {
+                border-bottom: none !important;
+                margin-bottom: 0;
+            }
+
+            /* align images right and shrink them a bit */
+/* NOT USED
+            img[class="col-3-img"] {
+                float: right;
+                margin-left: 6px;
+                width: 40%;
+                max-width: 130px;
+            }
+*/
+
+            img[class="col-3-full-img"] {
+                float: none;
+                margin: 0 !important;
+                width: 100% !important;
+            }
+        }
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        /**********************************
+            INSERT CUSTOM  STYLES HERE
+            SOME DEFAULTS TO WORK WITH
+        **********************************/
+        
+        /* Headers */
+        span[class="h1"] {
+            font-size: 18px !important;
+            font-weight: bold !important;
+            font-family: sans-serif !important;
+            color: #2469A0 !important;
+        }
+
+        span[class="h2"] {
+            font-size: 16px !important;
+            font-weight: bold !important;
+            font-family: sans-serif !important;
+            color: #2469A0 !important;
+        }
+
+        span[class="h3"] {
+            font-size: 14px !important;
+            font-weight: bold !important;
+            font-family: sans-serif !important;
+            color: #2469A0 !important;
+        }
+        
+        /* Paragraphs */
+        span[class="p"] {
+            font-size: 14px !important;
+            font-weight: normal !important;
+            font-family: sans-serif !important;
+            color: #666666 !important;
+        }
+        
+
+        @media only screen and (max-width : 600px) {
+            table[id="columns-container"] {
+                margin-bottom: 20px !important;
+            }
+
+            table[class="col-3"] {
+                border-bottom-color: #455560;
+                border-bottom-width: 1px;
+                border-bottom-style: solid;
+                margin-bottom: 15px;
+            }
+        }
+    </style>
+
+</head>
+<body style="margin:0; padding:10px 0;" bgcolor="#ebebeb" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0"><br>
+    <table border="0" width="100%" height="100%" cellpadding="0" cellspacing="0" bgcolor="#ebebeb">
+        <tr>
+            <td align="center" valign="top" bgcolor="#ebebeb" style="background-color: #ebebeb;">
+                <table border="0" width="600" cellpadding="0" cellspacing="0" class="container" bgcolor="#ffffff">
+                    <tr>
+                        <td class="container-padding" bgcolor="#ffffff" style="background-color: #ffffff; padding-left: 30px; padding-right: 30px; font-size: 13px; line-height: 20px; font-family: Helvetica, sans-serif; color: #333;" align="left"><br>
+
+
+
+
+
+
+
+
+
+
+	<table border="0" cellpadding="0" cellspacing="0" class="columns-container" width="540">
+		<tr>
+			<td valign="top">
+
+				<!-- ### COLUMN 1 ### -->
+				<table style="display: inline-table; padding-right: 10px;"  border="0" cellspacing="0" cellpadding="0" width="270" align="left" class="col-2" id="force-col">
+					<tr>
+						<td align="left" valign="top" style="font-size:13px; line-height: 20px; font-family: Arial, sans-serif;">
+							
+							
+							
+							
+							
+							
+							<!-- Put Content Here -->
+							
+							
+							
+							
+						</td>
+					</tr>
+				</table>
+
+				<!-- ### COLUMN 2 ### -->
+				<table style="display: inline-table; padding-left: 10px;" border="0" cellspacing="0" cellpadding="0" width="270" align="left" class="col-2" id="force-col">
+					<tr>
+						<td align="left" valign="top" style="font-size:13px; line-height: 20px; font-family: Arial, sans-serif;">
+							
+							
+							
+							
+							
+							
+							<!-- Put Content Here -->
+							c
+							
+							
+							
+							
+							
+						</td>
+					</tr>
+				</table>
+
+			</td>
+		</tr>
+	</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<table border="0" cellpadding="0" cellspacing="0" class="columns-container" width="540">
+		<tr>
+			<td valign="top">
+
+				<!-- ### COLUMN 1 ### -->
+				<table style="display: inline-table; padding-right: 10px;" border="0" cellspacing="0" cellpadding="0" width="180" align="left" class="col-3" id="force-col">
+					<tr>
+						<td align="left" valign="top" style="font-size:13px; line-height: 20px; font-family: Arial, sans-serif;">
+							
+							<img 
+                                src="http://lorempixel.com/180/100" 
+                                alt="Image Caption" 
+                                style="vertical-align:top; padding-bottom:12px;" 
+                                border="0" hspace="0" vspace="0" class="col-3-img-full"> <!-- dont edit this line -->
+							
+							It's worse than being in the whirled woods, the last day of the year! Who'd go climbing after chestnuts now? But there they go, all cursing, and here I don't.
+							<br>
+						</td>
+					</tr>
+				</table>
+
+				<!-- ### COLUMN 2 ### -->
+				<table style="display: inline-table; padding-right: 5px; padding-left: 5px;" border="0" cellspacing="0" cellpadding="0" width="180" align="left" class="col-3" id="force-col">
+					<tr>
+						<td align="left" valign="top" style="font-size:13px; line-height: 20px; font-family: Arial, sans-serif;">
+							
+							
+							<span class="h1">Herman Melville</span>
+							<br>
+							Fine prospects to 'em; they're on the road to heaven. Hold on hard! Jimmini, what a squall! But those chaps there are worse yet—they are your&hellip;
+							<br>
+						</td>
+					</tr>
+				</table>
+
+				<!-- ### COLUMN 3 ### -->
+				<table style="display: inline-table; padding-left: 10px;" border="0" cellspacing="0" cellpadding="0" width="180" align="left" class="col-3" id="force-col">
+					<tr>
+						<td align="left" valign="top" style="font-size:13px; line-height: 20px; font-family: Arial, sans-serif;">
+							<a href="#" style="color:#2469A0; font-weight:bold">I am Ishmael</a><br>
+							White squalls? white whale, shirr! shirr! Here have I heard all their chat just now, and the white whale—shirr! shirr!—but spoken of once! and&hellip;
+							<br>
+						</td>
+					</tr>
+				</table>
+
+			</td>
+		</tr>
+	</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<br><br></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<br></body>
+</html>                                                                                                                                                                                                                                                       
