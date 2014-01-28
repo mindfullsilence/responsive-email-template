@@ -16,5 +16,5 @@ Used for creating easy responsive email templates.
 Tips
 ====
 
-* Use <br> tags for vertical spacing rather than padding or margin whenever possible. Padding and margin are a bit buggy on some email clients with tables and block level elements.
+* Use `<br>` tags for vertical spacing rather than padding or margin whenever possible. Padding and margin are a bit buggy on some email clients with tables and block level elements.
 * Avoid semantic tags like &lt;h1&gt; - &lt;h6&gt;, &lt;p&gt;, &lt;em&gt;, etc. These tend to render a bit odd in some email clients when dealing with padding, margins, and line height. For instance, h1 tags are stripped in some email clients, and in microsoft web mail they are automatically given microsoft branded styles. Instead, use &lt;span&gt; tags with inline styles on all text.
